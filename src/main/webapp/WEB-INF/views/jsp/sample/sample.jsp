@@ -17,7 +17,7 @@
 <H5>안녕하세요. Aks Company에 오신것을 환영합니다.</H5>
 <H5>본 프로젝트는 My Office Terrior 입니다.</H5>
 
-<h4>서버 URL :  <a href="http://123.123.123/mot/sample.do" target="_blank">http://123.123.123/mot/sample.do</a></h4>
+<h4>서버 URL :  <a href="http://118.36.196.100:7070/mot/sample.do" target="_blank">http://118.36.196.100:7070/mot/sample.do</a></h4>
 <h4>mot git url : <a href="https://github.com/dhk5646/mot" target="_blank">https://github.com/dhk5646/mot</a> </h4>
 <H4>진척사항</H4>
 
