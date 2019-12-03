@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE xml>
+<Configuration status="WARN"> 
+
+    <Appenders> 
+     <console name="console" target="SYSTEM_OUT"> 
+      <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" /> 
+     </console>
+    </Appenders> 
+    <Loggers> 
+    <Root level="info"> 
+     <AppenderRef ref="console"/> 
+    </Root> 
+	
+	<logger name="com.aks.mot.*" level="debug" additivity="false">
+		<Appender-ref ref="console" />
+	</logger>    
+    <Logger name="com.zaxxer.hikari.pool" level="off">
+    	<Appender-ref ref="console" />
+    </Logger>
+    <Logger name="com.zaxxer.hikari.util" level="off">
+    	<Appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="java.sql" level="off" additivity="false">
+        <Appender-ref ref="console"/> 
+    </Logger>
+    
+    <Logger name="corg.springframework.web" level="off"> 
+     <AppenderRef ref="console"/> 
+    </Logger>
+    
+    
+	<logger name="log4jdbc.log4j2" level="off" additivity="false"/> 
+	<Logger name="jdbc.sqlonly" level="off" /> 
+	<Logger name="jdbc.sqltiming" level="info" /> 
+	<Logger name="jdbc.audit" level="off" /> 
+	<Logger name="jdbc.resultset" level="off" /> 
+	<Logger name="jdbc.resultsettable" level="info" /> 
+	<Logger name="jdbc.connection" level="off" />
+	
+	
+</Loggers> 
+</Configuration> 

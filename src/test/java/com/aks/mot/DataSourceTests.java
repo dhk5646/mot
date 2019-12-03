@@ -1,6 +1,6 @@
-package com.aks.mot.sample;
+package com.aks.mot;
 
-import static org.junit.Assert.assertNotNull;
+import javax.sql.DataSource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,23 +11,23 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.aks.mot.com.config.ApplicationConfig;
 
 import lombok.Setter;
-import lombok.extern.java.Log;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes= {ApplicationConfig.class})
-@Log
-public class SampleTests {
+
+public class DataSourceTests {
 	
-	@Setter(onMethod_ = { @Autowired })
-	private Restaurant restaurant;
-	
+	@Setter(onMethod_ = { @Autowired})
+	private DataSource dataSource;
 	@Test
-	public void testExist() {
+	public void testConnection() {
 		
-		assertNotNull(restaurant);
-		
-		//log.info(restaurant);
-		log.info("--------------------------");
-		//log.info(restaurant.getChef());
+//		try(Connection con = dataSource.getConnection()){
+//			
+//			System.out.println(con);
+//			
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
 	}
 }
