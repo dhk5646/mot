@@ -1,4 +1,4 @@
-package com.aks.mot.com.config;
+package com.aks.mot.cmn.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,8 +12,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-import com.aks.mot.com.annotation.Comment;
-import com.aks.mot.com.interceptor.AuthInterceptor;
+import com.aks.mot.cmn.annotation.Comment;
+import com.aks.mot.cmn.interceptor.AuthInterceptor;
 
 @Comment("servlet-context.xml Role")
 @Configuration

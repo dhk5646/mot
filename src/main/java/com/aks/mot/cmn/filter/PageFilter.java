@@ -1,4 +1,4 @@
-package com.aks.mot.com.filter;
+package com.aks.mot.cmn.filter;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.aks.mot.com.annotation;
+package com.aks.mot.cmn.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

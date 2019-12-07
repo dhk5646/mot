@@ -1,4 +1,4 @@
-package com.aks.mot.com.mybatis;
+package com.aks.mot.cmn.mybatis;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;

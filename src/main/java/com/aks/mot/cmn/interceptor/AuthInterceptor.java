@@ -1,5 +1,5 @@
 
-package com.aks.mot.com.interceptor;
+package com.aks.mot.cmn.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,8 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.aks.mot.com.annotation.Comment;
-import com.aks.mot.com.util.PropertyUtil;
+import com.aks.mot.cmn.annotation.Comment;
+import com.aks.mot.cmn.util.PropertyUtil;
 
 
 @Comment("미완료")

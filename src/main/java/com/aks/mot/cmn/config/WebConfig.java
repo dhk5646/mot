@@ -1,4 +1,4 @@
-package com.aks.mot.com.config;
+package com.aks.mot.cmn.config;
 
 import javax.servlet.Filter;
 import javax.servlet.ServletRegistration;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.aks.mot.com.annotation.Comment;
+import com.aks.mot.cmn.annotation.Comment;
 
 /** 다음 설정은 web.xml 의 아래 내용과 동일하다
  * 다만 ContextLoadListner 및 DispatcherServlet 설정은 AbstractAnnotationConfigDispatcherServletInitializer 추상클래스에서 구현되어있음

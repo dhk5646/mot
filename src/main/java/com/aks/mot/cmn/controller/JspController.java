@@ -1,4 +1,4 @@
-package com.aks.mot.com.controller;
+package com.aks.mot.cmn.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,9 +13,9 @@ public class JspController {
 	
 	
 	@RequestMapping(value = "/**/*.do")
-	public ModelAndView doGet(HttpServletRequest req, HttpServletResponse res) throws Exception {
+	public ModelAndView doGet(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
-        String strUri = req.getRequestURI();
+        String strUri = request.getRequestURI();
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName(strUri.replace(".do", ""));
 		

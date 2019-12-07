@@ -1,4 +1,4 @@
-package com.aks.mot.com.dao;
+package com.aks.mot.cmn.dao;
 
 import java.sql.Connection;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import com.aks.mot.com.annotation.Comment;
+import com.aks.mot.cmn.annotation.Comment;
 
 @Comment("미완료")
 @Repository

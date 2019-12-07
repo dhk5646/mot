@@ -31,11 +31,12 @@ public class SampleService {
 		
 		logger.info("SampleService.read Start[" + runLevel +"]");
 		
-		Map<String, Object> result = new HashMap<String, Object>();
+		Map<String, Object> inputMap  = new HashMap<String, Object>();
+		Map<String, Object> outputMap = new HashMap<String, Object>();
 		
 		/*1*/
 		SampleMapper sampleMapper = sqlSession.getMapper(SampleMapper.class);
-		result.put("read", sampleMapper.read(runLevel));
+		outputMap.put("read", sampleMapper.read(runLevel));
 		
 		/*2*/
 		//String a = sqlSession.selectOne("com.aks.mot.mvc.smp.SampleMapper.selectOne", runLevel);
@@ -50,6 +51,6 @@ public class SampleService {
 		long totSec = (System.currentTimeMillis() - startSec)/1000;
 		
 		logger.info("MvcController.doGet End [" + totSec + "]"  );
-		return result;
+		return outputMap;
 	}
 }

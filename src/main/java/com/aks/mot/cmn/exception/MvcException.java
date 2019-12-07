@@ -1,4 +1,4 @@
-package com.aks.mot.com.exception;
+package com.aks.mot.cmn.exception;
 
 public class MvcException extends AksException {
 	

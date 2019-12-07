@@ -1,4 +1,4 @@
-package com.aks.mot.com.config;
+package com.aks.mot.cmn.config;
 
 import java.util.Map;
 
@@ -21,9 +21,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.aks.mot.com.annotation.Comment;
-import com.aks.mot.com.mybatis.RefreshableSqlSessionFactoryBean;
-import com.aks.mot.com.util.BeanUtil;
+import com.aks.mot.cmn.annotation.Comment;
+import com.aks.mot.cmn.mybatis.RefreshableSqlSessionFactoryBean;
+import com.aks.mot.cmn.util.BeanUtil;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Comment("application-context.xml Role")

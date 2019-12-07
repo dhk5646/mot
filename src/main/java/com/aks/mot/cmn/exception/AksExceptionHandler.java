@@ -1,4 +1,4 @@
-package com.aks.mot.com.exception;
+package com.aks.mot.cmn.exception;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.aks.mot.com.annotation.Comment;
+import com.aks.mot.cmn.annotation.Comment;
 
 
 @Comment("공통 예외처리 핸들러")

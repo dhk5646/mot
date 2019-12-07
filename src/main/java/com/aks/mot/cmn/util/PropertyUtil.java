@@ -1,4 +1,4 @@
-package com.aks.mot.com.util;
+package com.aks.mot.cmn.util;
 
 import java.util.ResourceBundle;
 
