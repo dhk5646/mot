@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<script type="text/javascript" src="/resources/js/cmm/lib/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/resources/js/smp/sample.js"></script>
 
 <h1>
@@ -35,3 +36,25 @@
 <br>
 
 <img src="/resources/img/list.PNG" alt="My Image">
+
+<H3>12월 28일</H3>
+1. 계산기를 만들어봅시다. <br>
+
+<input type="text" id="param1">
+<select id="expression">
+	<option value="add">+</option>
+	<option value="sub">-</option>
+	<option value="mul">*</option>
+	<option value="div">%</option>
+</select>
+<input type="text" id="param2">
+<button type="button" id="buttonCalculator" onclick="fnCalculator1();">계산하기</button>
+결과 : <input type="text" id="result" >
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
