@@ -1,5 +1,5 @@
 package com.aks.mot.cmm.util;
 
+public class SequenceUtil {
 
-public class ExceptionUtil {
 }

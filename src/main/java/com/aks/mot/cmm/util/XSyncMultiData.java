@@ -1,5 +1,4 @@
 package com.aks.mot.cmm.util;
 
-
-public class ExceptionUtil {
+public class XSyncMultiData{
 }

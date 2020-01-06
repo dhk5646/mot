@@ -1,5 +1,6 @@
+
 package com.aks.mot.cmm.util;
 
+public class AuthUtil {
 
-public class ExceptionUtil {
 }

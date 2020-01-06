@@ -7,21 +7,24 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pantos.vms.cmm.annotation.Comment;
-import com.pantos.vms.cmm.session.SessionMaker;
-import com.pantos.vms.cmm.util.SessionUtil;
+import com.aks.mot.cmm.annotation.Comment;
+import com.aks.mot.cmm.session.SessionMaker;
+import com.aks.mot.cmm.util.RequestUtil;
+import com.aks.mot.cmm.util.SessionUtil;
 
 @RestController
 @RequestMapping(value = "/sso")
-public class LoginController {
+public class LoginService {
 
-	private static Logger logger = ECLoggerFactory.getLogger(LoginController.class);
+	private static Logger logger = LoggerFactory.getLogger(LoginService.class);
 
 	@Autowired
 	private SessionMaker sessionMaker;
@@ -29,9 +32,9 @@ public class LoginController {
 	@Comment("로그인 처리")
 	@RequestMapping(value = "/login.dev")
 	public Map<String, Object> login(HttpServletRequest req, HttpServletResponse res) throws Exception {
-		String userId = xss(req.getParameter("userId"));
-		String passwd = xss(req.getParameter("passwd"));
-		String remember = xss(req.getParameter("remember"));
+		String userId = RequestUtil.xss(req.getParameter("userId"));
+		String passwd = RequestUtil.xss(req.getParameter("passwd"));
+		String remember = RequestUtil.xss(req.getParameter("remember"));
 
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("userId", userId);
@@ -74,8 +77,8 @@ public class LoginController {
 	@CrossOrigin("*")
 	@RequestMapping(value = "/mlogin.dev", method = RequestMethod.POST)
 	public Map<String, Object> mlogin(HttpServletRequest req, HttpServletResponse res) throws Exception {
-		String userId = xss(req.getParameter("userId"));
-		String passwd = xss(req.getParameter("passwd"));
+		String userId = RequestUtil.xss(req.getParameter("userId"));
+		String passwd = RequestUtil.xss(req.getParameter("passwd"));
 
 		Map<String, Object> param = new HashMap<String, Object>();
 		param.put("userId", userId);
