@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.aks.mot.svc.sample.sqlMapperSampleMapper">
+    
+    <select id="read" resultType="String" parameterType="String">
+        /*com.aks.mot.mvc.smp.SampleMapper.read*/
+        SELECT #{input} FROM DUAL
+        ORDER BY 1
+    </select>
+</mapper>
+
+
+    
+    
+    

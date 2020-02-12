@@ -15,9 +15,9 @@ public class JspController {
 	@RequestMapping(value = "/**/*.do")
 	public ModelAndView doGet(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
-        String strUri = request.getRequestURI();
+        String urlExtension = request.getRequestURI();
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName(strUri.replace(".do", ""));
+		mav.setViewName(urlExtension.replace(".do", ""));
 		
 		return mav;
 	}

@@ -59,7 +59,7 @@ public class ApplicationConfig{
 		dataSource.setJdbcUrl("jdbc:log4jdbc:mariadb://localhost:3306/mot");
 		dataSource.addDataSourceProperty("user", "dbsvc"); 
 		dataSource.addDataSourceProperty("password", "dbsvc1234!");
-		dataSource.setAutoCommit(false); 
+		dataSource.setAutoCommit(false);
 		
 		return dataSource;
 	}
@@ -106,7 +106,6 @@ public class ApplicationConfig{
 	@Bean
 	public PlatformTransactionManager transactionManager() {
 		DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
-		transactionManager.setDataSource(mariaDbDs());
 		transactionManager.setDataSource(mariaDbDs());
 		return transactionManager;
     }

@@ -87,7 +87,7 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
 	protected String[] getServletMappings() {
 		logger.info("WebConfig.getServletMappings()");
 		
-		return new String[] {"*.do", "*.mvc"};
+		return new String[] {"*.do", "*.svc"};
 	}
 	
 	@Comment("Filter Config")

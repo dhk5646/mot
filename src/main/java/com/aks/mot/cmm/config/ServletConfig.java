@@ -43,7 +43,7 @@ public class ServletConfig implements WebMvcConfigurer{
 	
 	@Comment("Interceptor 설정")
 	public void addInterceptors(InterceptorRegistry registry) {
-	  registry.addInterceptor(new AuthInterceptor()).addPathPatterns(new String[] {"/**/*.do", "/**/*.mvc"});
+	  registry.addInterceptor(new AuthInterceptor()).addPathPatterns(new String[] {"/**/*.do", "/**/*.svc"});
 	}
 	
 }

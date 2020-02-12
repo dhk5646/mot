@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.aks.mot.cmm.util.Constants;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pantos.vms.cmm.session.UserData;
-import com.pantos.vms.cmm.util.SessionUtil;
+import com.aks.mot.cmm.session.UserData;
+import com.aks.mot.cmm.util.SessionUtil;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONNull;

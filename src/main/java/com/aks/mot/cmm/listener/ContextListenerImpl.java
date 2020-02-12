@@ -15,7 +15,6 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import com.aks.mot.cmm.config.AppConst;
 import com.aks.mot.cmm.util.BeanUtil;
 import com.aks.mot.cmm.util.PropertyUtil;
-import com.pantos.vms.cmm.util.SystemUtil;
 
 @WebListener
 public class ContextListenerImpl implements ServletContextListener {
@@ -32,10 +31,10 @@ public class ContextListenerImpl implements ServletContextListener {
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		holdServletContext(sce.getServletContext());
-
-		String wasNm = SystemUtil.getWasInstNm();
-		JdbcTemplate jdbcTemplate = (JdbcTemplate) beanUtil.getBean("jdbcTemplate");
-		jdbcTemplate.update("UPDATE TB_SM_SYS_CONN_HIST SET SESS_EXPR_YN = 'Y', LOGOUT_DT = NOW() WHERE WAS_NM = '" + wasNm + "' AND SESS_EXPR_YN = 'N'");
+		
+		String wasNm = "was";
+		//JdbcTemplate jdbcTemplate = (JdbcTemplate) beanUtil.getBean("jdbcTemplate");
+		//jdbcTemplate.update("UPDATE TB_SM_SYS_CONN_HIST SET SESS_EXPR_YN = 'Y', LOGOUT_DT = NOW() WHERE WAS_NM = '" + wasNm + "' AND SESS_EXPR_YN = 'N'");
 
 		// 개발서버 AOP 로깅 활성화
 		if ("prd".equals(PropertyUtil.getString("host.run.mode"))) {
