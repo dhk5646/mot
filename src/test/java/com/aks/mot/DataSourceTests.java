@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.aks.mot.cmm.config.ApplicationConfig;
+import com.aks.mot.common.config.RootConfig;
 
 import lombok.Setter;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes= {ApplicationConfig.class})
+@ContextConfiguration(classes= {RootConfig.class})
 
 public class DataSourceTests {
 	
